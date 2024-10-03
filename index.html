@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Educational Hub</h1>
+        <p>Discover your potential and explore new paths.</p>
+      </header>
+      <main>
+        <section class="options">
+          <div class="option">
+            <h2>Interactive Courses</h2>
+            <p>Engaging courses designed for all learning styles.</p>
+            <button onclick="navigateTo('courses.html')">
+              Explore Courses
+            </button>
+          </div>
+          <div class="option">
+            <h2>Career Guidance</h2>
+            <p>Find the right career path with our expert advice.</p>
+            <button onclick="navigateTo('career.html')">Get Guidance</button>
+          </div>
+          <div class="option">
+            <h2>Resources & Tools</h2>
+            <p>Access a wealth of educational resources.</p>
+            <button onclick="navigateTo('resources.html')">
+              Access Resources
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
