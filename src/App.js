@@ -10,8 +10,8 @@ function App() {
     <div>
       {/* Navigation Links */}
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/assessment">Take Assessment</Link>
+        <Link to="/">Home page </Link>
+        {/* <Link to="/assessment">Assessment page</Link> */}
       </nav>
 
       {/* Routes for the different pages */}
