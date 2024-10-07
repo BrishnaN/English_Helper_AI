@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set your desired font family */
+  display: flex; /* Enable flexbox for body */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.app-container {
+  text-align: center; /* Center text inside the container */
+}
+
+h1,
+p {
+  margin-bottom: 20px; /* Add space below the navigation */
+}

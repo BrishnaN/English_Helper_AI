@@ -1,23 +1,24 @@
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
-
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home"; // This is your home page component
+import Assessment from "./components/Assessment"; // This is your assessment page component
+import "./styles.css"; // Import the CSS file
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hi Brishna and Khadija
-        </a>
-      </header>
+    <div>
+      {/* Navigation Links */}
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/assessment">Take Assessment</Link>
+      </nav>
+
+      {/* Routes for the different pages */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/assessment" element={<Assessment />} />
+      </Routes>
     </div>
   );
 }
