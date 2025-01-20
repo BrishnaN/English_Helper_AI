@@ -1,6 +1,6 @@
 //import logo from "./logo.svg";
 import React from "react";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
@@ -16,7 +16,7 @@ if (prevKey !== null) {
 }
 
 function App() {
-  const [key, setKey] = useState < string > keyData; //for api key input
+  const [key, setKey] = useState(keyData); //for api key input
 
   //sets the local storage item to the api key the user inputed
   function handleSubmit() {
@@ -25,9 +25,10 @@ function App() {
   }
 
   //whenever there's a change it'll store the api key in a local state called key but it won't be set in the local storage until the user clicks the submit button
-  function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
+  function changeKey(event) {
     setKey(event.target.value);
   }
+
   return (
     <div>
       {/* Navigation Links */}
