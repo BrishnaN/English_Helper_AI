@@ -1,6 +1,6 @@
 import React from "react";
 
-const GameStart = () => {
+const LessonPage = () => {
   const startGame = () => {
     console.log("Game Started!");
     // Redirect to game page or start logic
@@ -26,4 +26,4 @@ const GameStart = () => {
   );
 };
 
-export default GameStart;
+export default LessonPage;

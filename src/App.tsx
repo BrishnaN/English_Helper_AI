@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
-import Home from "./components/Home";
-import Assessment from "./components/Assessment";
-import SignUp from "./components/SignUp";
-import Login from "./components/Login";
-import LessonPage from "./components/LessonPage";
+import Home from "./components/Home.tsx";
+import Assessment from "./components/Assessment.tsx";
+import SignUp from "./components/SignUp.tsx";
+import Login from "./components/Login.tsx";
+import LessonPage from "./components/LessonPage.tsx";
 import "./App.css";
-import "./styles.css";
+//import "./styles.css";
 
 const saveKeyData = "MYKEY";
 const prevKey = localStorage.getItem(saveKeyData);
@@ -26,25 +26,24 @@ const App: React.FC = () => {
   }
 
   return (
-    <Router>
-      <div className="body">
-        {/* Navigation */}
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/signup">Sign Up</Link> |{" "}
-          <Link to="/login">Login</Link>
-        </nav>
+    <div className="body">
+      {/* Navigation */}
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/signup">Sign Up</Link> |{" "}
+        <Link to="/login">Login</Link>
+      </nav>
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/lessonPage" element={<LessonPage />} />
-          <Route path="/assessment" element={<Assessment />} />
-        </Routes>
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/lessonPage" element={<LessonPage />} />
+        <Route path="/assessment" element={<Assessment />} />
+      </Routes>
 
-        {/* API Key Form */}
-        <Form>
+      {/* API Key Form */}
+      {/* <Form>
           <Form.Label>API Key:</Form.Label>
           <Form.Control
             type="password"
@@ -55,9 +54,8 @@ const App: React.FC = () => {
           <Button className="Submit-Button" onClick={handleSubmit}>
             Submit
           </Button>
-        </Form>
-      </div>
-    </Router>
+        </Form> */}
+    </div>
   );
 };
 
