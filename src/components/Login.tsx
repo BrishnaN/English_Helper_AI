@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [emailOrUsername, setEmailOrUsername] = useState("");
@@ -15,11 +15,9 @@ const Login = () => {
     const isEmail = /\S+@\S+\.\S+/.test(emailOrUsername);
     const storedUser = localStorage.getItem(isEmail ? "email" : "username");
 
-    // Check if the entered credentials match the stored ones
     if (storedUser && storedUser === emailOrUsername) {
       const storedPassword = localStorage.getItem("password");
       if (storedPassword === password) {
-        // Login successful
         console.log("Login Successful:", {
           loginType: isEmail ? "Email" : "Username",
           value: emailOrUsername,
@@ -32,7 +30,7 @@ const Login = () => {
         );
         setEmailOrUsername("");
         setPassword("");
-        navigate("/lessonPage"); // Redirect to the start game page
+        navigate("/lessonPage ");
       } else {
         alert("Incorrect password, please try again.");
       }
@@ -79,6 +77,14 @@ const Login = () => {
       >
         Sign In
       </button>
+      <p style={{ marginTop: "15px" }}>
+        <Link
+          to="/forgot-password"
+          style={{ color: "#007BFF", textDecoration: "none" }}
+        >
+          Forgot Password?
+        </Link>
+      </p>
       <p style={{ marginTop: "15px" }}>
         Don't have an account?{" "}
         <Link to="/signup" style={{ color: "#007BFF", textDecoration: "none" }}>

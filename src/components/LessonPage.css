@@ -1,0 +1,97 @@
+.lesson-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.level-button {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #007bff;
+  color: white;
+}
+
+.level-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.level-button:active {
+  transform: translateY(1px);
+}
+
+.level-button.beginner {
+  background-color: #28a745;
+}
+
+.level-button.intermediate {
+  background-color: #ffc107;
+}
+
+.level-button.advanced {
+  background-color: #dc3545;
+}
+
+.start-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:active {
+  transform: translateY(1px);
+}
+
+.start-button:focus {
+  outline: none;
+}
+
+/* Adding 3D Effect on Hover */
+.lesson-page {
+  perspective: 1000px;
+}
+
+.buttons-container {
+  transform-style: preserve-3d;
+  transform: rotateY(10deg);
+}
+
+.level-button {
+  transform: rotateY(30deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.level-button:hover {
+  transform: rotateY(0deg) translateY(-5px);
+}
+
+.start-button {
+  transform: rotateY(-30deg);
+}
+
+.start-button:hover {
+  transform: rotateY(0deg) translateY(-5px);
+}
