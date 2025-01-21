@@ -1,54 +1,50 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // To navigate to other pages
 import "./LessonPage.css";
 
 const LessonPage = () => {
-  const navigate = useNavigate();
-
-  // Function to start the game or lesson
-  const startGame = () => {
-    console.log("Game Started!");
-    // Redirect to the game or lesson page
-    navigate("/game"); // Example: Redirecting to the game page
-  };
-
-  // Function to handle level selection
-  const handleLevelSelect = (level: string) => {
-    console.log(`${level} level selected`);
-    // Navigate to the lessons page for the selected level
-    navigate(`/level/${level}`);
+  const startGame = (level: string) => {
+    console.log(`${level} Level Selected!`);
+    // Redirect or handle logic based on level
   };
 
   return (
     <div className="lesson-page">
-      <h1 className="page-title">
-        Welcome to the English_Helper_AI Lesson Page!
-      </h1>
-
-      <div className="buttons-container">
-        <button
-          className="level-button beginner"
-          onClick={() => handleLevelSelect("beginner")}
+      <h1 className="lesson-title">Welcome to English Helper AI</h1>
+      <p className="lesson-description">
+        Learn English at your pace. Select your desired level and begin your
+        journey!
+      </p>
+      <div className="lesson-levels">
+        <div
+          className="lesson-card beginner"
+          onClick={() => startGame("Beginner")}
         >
-          Beginner
-        </button>
-        <button
-          className="level-button intermediate"
-          onClick={() => handleLevelSelect("intermediate")}
+          <h3>Beginner</h3>
+          <p>
+            Start with the basics of English: vocabulary, speaking, and grammar.
+          </p>
+        </div>
+        <div
+          className="lesson-card intermediate"
+          onClick={() => startGame("Intermediate")}
         >
-          Intermediate
-        </button>
-        <button
-          className="level-button advanced"
-          onClick={() => handleLevelSelect("advanced")}
+          <h3>Intermediate</h3>
+          <p>
+            Build upon your skills with reading, listening, and advanced
+            grammar.
+          </p>
+        </div>
+        <div
+          className="lesson-card advanced"
+          onClick={() => startGame("Advanced")}
         >
-          Advanced
-        </button>
+          <h3>Advanced</h3>
+          <p>
+            Master English with complex speaking, writing, and comprehension
+            lessons.
+          </p>
+        </div>
       </div>
-
-      <button className="start-button" onClick={startGame}>
-        Start Game
-      </button>
     </div>
   );
 };
