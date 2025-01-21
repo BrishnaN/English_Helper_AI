@@ -69,15 +69,26 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Input field styling */
+.form-container input {
+  margin-right: 10px; /* Space between input and button */
+  margin-top: 620px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button styling */
 .Submit-Button {
-  background-color: #007bff;
-  color: white;
   padding: 0.5rem 1rem;
+  background-color: #1e3a8a; /* Shiny dark blue */
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .Submit-Button:hover {
-  background-color: #0056b3;
+  background-color: #102a5b; /* Darker shiny blue on hover */
 }

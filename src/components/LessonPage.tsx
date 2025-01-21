@@ -8,7 +8,7 @@ const LessonPage = () => {
 
   return (
     <div>
-      <h1>Welcome to the Game!</h1>
+      <h1>Welcome to the English_Helper_AI!</h1>
       <button
         style={{
           padding: "10px 20px",

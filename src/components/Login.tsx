@@ -32,7 +32,7 @@ const Login = () => {
         );
         setEmailOrUsername("");
         setPassword("");
-        navigate("/startgame"); // Redirect to the start game page
+        navigate("/lessonPage"); // Redirect to the start game page
       } else {
         alert("Incorrect password, please try again.");
       }

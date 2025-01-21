@@ -43,18 +43,17 @@ const App: React.FC = () => {
       </Routes>
 
       {/* API Key Form */}
-      {/* <Form>
-          <Form.Label>API Key:</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Insert API Key Here"
-            onChange={changeKey}
-          />
-          <br />
-          <Button className="Submit-Button" onClick={handleSubmit}>
-            Submit
-          </Button>
-        </Form> */}
+      <div className="form-container">
+        <Form.Control
+          type="password"
+          placeholder="Insert API Key Here"
+          onChange={changeKey}
+          style={{ width: "300px" }}
+        />
+        <Button className="Submit-Button" onClick={handleSubmit}>
+          Submit
+        </Button>
+      </div>
     </div>
   );
 };
