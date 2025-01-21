@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7ea85a; /* Shiny dark blue */
+  color: white; /* Ensure text is readable */
+}
+nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
