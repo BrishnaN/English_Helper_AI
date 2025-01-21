@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1e3a8a; /* Shiny dark blue */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,6 @@
   }
 }
 
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -48,11 +47,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #7ea85a; /* Shiny dark blue */
-  color: white; /* Ensure text is readable */
+  background-color: #b484d2; /* Shiny dark blue */
+  color: white;
 }
+
 nav {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 20px;
 }
@@ -60,11 +60,24 @@ nav {
 nav a {
   text-decoration: none;
   margin-left: 15px;
-  color: #007bff;
+  color: white;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #0056b3;
+  color: #ddd;
   text-decoration: underline;
+}
+
+.Submit-Button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Submit-Button:hover {
+  background-color: #0056b3;
 }
