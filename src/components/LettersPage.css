@@ -1,0 +1,51 @@
+/* General styles */
+.container {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Frame styles */
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 200px auto;
+  width: 400px;
+  height: 200px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Letter styles */
+.letter {
+  font-size: 80px;
+  color: #555;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 30px;
+}
+
+/* Navigation button styles */
+.navButton {
+  font-size: 30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.navButton.hidden {
+  visibility: hidden;
+}
