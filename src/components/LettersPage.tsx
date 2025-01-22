@@ -1,26 +1,32 @@
 import React, { useState } from "react";
 import "./LettersPage.css";
 
-const letters: string[] = ["A a", "B b", "C c", "D d", "E e", "F f", "G g"]; // Add more letter pairs as needed
+const letters: string[] = [
+  "A a", "B b", "C c", "D d", "E e", "F f", "G g", "H h", "I i", "J j", 
+  "K k", "L l", "M m", "N n", "O o", "P p", "Q q", "R r", "S s", "T t", 
+  "U u", "V v", "W w", "X x", "Y y", "Z z"
+];
 
 const LettersPage: React.FC = () => {
   const [currentLetterIndex, setCurrentLetterIndex] = useState<number>(0);
 
   const handlePrevious = (): void => {
     if (currentLetterIndex > 0) {
+      console.log("Previous button clicked");
       setCurrentLetterIndex(currentLetterIndex - 1);
     }
   };
 
   const handleNext = (): void => {
     if (currentLetterIndex < letters.length - 1) {
+      console.log("Next button clicked");
       setCurrentLetterIndex(currentLetterIndex + 1);
     }
   };
 
   const playAudio = (): void => {
-    const letter = letters[currentLetterIndex][0]; // Extract the uppercase letter
-    const utterance = new SpeechSynthesisUtterance(letter.toLowerCase()); // Use lowercase for pronunciation
+    const letter: string = letters[currentLetterIndex][0]; // Extract the uppercase letter
+    const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(letter.toLowerCase());
     utterance.lang = "en-US"; // Adjust language if needed
     utterance.rate = 0.8; // Control the speed of the speech
     window.speechSynthesis.speak(utterance);
@@ -30,15 +36,17 @@ const LettersPage: React.FC = () => {
     <div className="container">
       <h1 className="heading">Learn English Letters</h1>
       <div className="frame">
+        <button onClick={playAudio} className="audioButton">
+          👂
+        </button>
         <button
           onClick={handlePrevious}
           className={`navButton ${currentLetterIndex === 0 ? "hidden" : ""}`}
         >
-          &lt;
+          ←
         </button>
         <div className="letterContainer">
           <span className="letter">{letters[currentLetterIndex]}</span>
-          <button onClick={playAudio}>🔊</button>
         </div>
         <button
           onClick={handleNext}
@@ -46,7 +54,7 @@ const LettersPage: React.FC = () => {
             currentLetterIndex === letters.length - 1 ? "hidden" : ""
           }`}
         >
-          &gt;
+          →
         </button>
       </div>
     </div>
