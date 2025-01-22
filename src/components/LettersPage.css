@@ -17,14 +17,14 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin: 200px auto;
+  margin: 20px auto; /* Adjusted for top/bottom spacing */
   width: 400px;
   height: 200px;
   background-color: linear-gradient(
     to bottom right,
     #0ee7e7,
     #9f72db
-  ); /* 3D gradient */;
+  ); /* 3D gradient */
   position: relative; /* Ensure the frame can position child elements absolutely */
   border-radius: 15px; /* Optional: for rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -67,7 +67,7 @@
   transform: scale(1.2); /* Slightly enlarge the icon on hover */
 }
 
-/* Letter styles */
+/* Letter container styling */
 .letterContainer {
   display: flex;
   justify-content: center;
@@ -117,4 +117,54 @@
 
 .frame > .letterContainer > .navButton:last-of-type {
   margin-left: 10px; /* Ensures space between the letter and the right button */
+}
+
+/* Alphabet Boxes (Exact match to the original frame with audio button) */
+.alphabetBoxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.alphabetBox {
+  margin: 10px;
+  padding: 20px;
+  background-color: linear-gradient(
+    to bottom right,
+    #0ee7e7,
+    #9f72db
+  ); /* Match the gradient used in the original frame */
+  border-radius: 15px; /* Same rounded corners as the frame */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Same shadow effect */
+  position: relative;
+}
+
+.alphabetBox::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alphabetBox h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.letterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letterList span {
+  font-size: 24px;
+  margin: 5px;
+  color: #046972;
 }

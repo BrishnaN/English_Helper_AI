@@ -57,6 +57,26 @@ const LettersPage: React.FC = () => {
           →
         </button>
       </div>
+
+      <div className="alphabetBoxes">
+        <div className="alphabetBox">
+          <h3>Capital Letters</h3>
+          <div className="letterList">
+            {letters.map(letter => (
+              <span key={letter}>{letter[0]} </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="alphabetBox">
+          <h3>Small Letters</h3>
+          <div className="letterList">
+            {letters.map(letter => (
+              <span key={letter}>{letter[2]} </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
