@@ -30,7 +30,7 @@ const Login = () => {
         );
         setEmailOrUsername("");
         setPassword("");
-        navigate("/lessonPage ");
+        navigate("/assessmentPage ");
       } else {
         alert("Incorrect password, please try again.");
       }
