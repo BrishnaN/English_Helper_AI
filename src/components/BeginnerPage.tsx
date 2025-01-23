@@ -18,7 +18,10 @@ const BeginnerPage = () => {
         <button>Letters</button>
       </a>
       <a href="/NumbersPage">
-        <button>Numbers!</button>
+        <button>Numbers</button>
+      </a>
+      <a href="/FamilyPage">
+        <button>Family</button>
       </a>
     </div>
   );
