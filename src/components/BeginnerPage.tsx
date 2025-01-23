@@ -17,6 +17,9 @@ const BeginnerPage = () => {
       <a href="/lettersPage">
         <button>Letters</button>
       </a>
+      <a href="/NumbersPage">
+        <button>Numbers!</button>
+      </a>
     </div>
   );
 };

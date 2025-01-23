@@ -2,36 +2,30 @@ import React, { useState } from "react";
 import "./LettersPage.css";
 import { Link } from "react-router-dom"; // Import the Link component
 
-const letters: string[] = [
-  "A a",
-  "B b",
-  "C c",
-  "D d",
-  "E e",
-  "F f",
-  "G g",
-  "H h",
-  "I i",
-  "J j",
-  "K k",
-  "L l",
-  "M m",
-  "N n",
-  "O o",
-  "P p",
-  "Q q",
-  "R r",
-  "S s",
-  "T t",
-  "U u",
-  "V v",
-  "W w",
-  "X x",
-  "Y y",
-  "Z z",
+const Numbers: string[] = [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "7",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
 ];
 
-const LettersPage: React.FC = () => {
+const NumbersPage: React.FC = () => {
   const [currentLetterIndex, setCurrentLetterIndex] = useState<number>(0);
 
   const handlePrevious = (): void => {
@@ -42,14 +36,14 @@ const LettersPage: React.FC = () => {
   };
 
   const handleNext = (): void => {
-    if (currentLetterIndex < letters.length - 1) {
+    if (currentLetterIndex < Numbers.length - 1) {
       console.log("Next button clicked");
       setCurrentLetterIndex(currentLetterIndex + 1);
     }
   };
 
   const playAudio = (): void => {
-    const letter: string = letters[currentLetterIndex][0]; // Extract the uppercase letter
+    const letter: string = Numbers[currentLetterIndex][0]; // Extract the uppercase letter
     const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(
       letter.toLowerCase()
     );
@@ -72,40 +66,20 @@ const LettersPage: React.FC = () => {
           ←
         </button>
         <div className="letterContainer">
-          <span className="letter">{letters[currentLetterIndex]}</span>
+          <span className="letter">{Numbers[currentLetterIndex]}</span>
         </div>
         <button
           onClick={handleNext}
           className={`navButton ${
-            currentLetterIndex === letters.length - 1 ? "hidden" : ""
+            currentLetterIndex === Numbers.length - 1 ? "hidden" : ""
           }`}
         >
           →
         </button>
       </div>
-
       <Link to="/beginnerPage">Go Back to Beginner Page</Link>
-      <div className="alphabetBoxes">
-        <div className="alphabetBox">
-          <h3>Capital Letters</h3>
-          <div className="letterList">
-            {letters.map(letter => (
-              <span key={letter}>{letter[0]} </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="alphabetBox">
-          <h3>Small Letters</h3>
-          <div className="letterList">
-            {letters.map(letter => (
-              <span key={letter}>{letter[2]} </span>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default LettersPage;
+export default NumbersPage;
