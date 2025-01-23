@@ -1,10 +1,34 @@
 import React, { useState } from "react";
 import "./LettersPage.css";
+import { Link } from "react-router-dom"; // Import the Link component
 
 const letters: string[] = [
-  "A a", "B b", "C c", "D d", "E e", "F f", "G g", "H h", "I i", "J j", 
-  "K k", "L l", "M m", "N n", "O o", "P p", "Q q", "R r", "S s", "T t", 
-  "U u", "V v", "W w", "X x", "Y y", "Z z"
+  "A a",
+  "B b",
+  "C c",
+  "D d",
+  "E e",
+  "F f",
+  "G g",
+  "H h",
+  "I i",
+  "J j",
+  "K k",
+  "L l",
+  "M m",
+  "N n",
+  "O o",
+  "P p",
+  "Q q",
+  "R r",
+  "S s",
+  "T t",
+  "U u",
+  "V v",
+  "W w",
+  "X x",
+  "Y y",
+  "Z z",
 ];
 
 const LettersPage: React.FC = () => {
@@ -26,7 +50,9 @@ const LettersPage: React.FC = () => {
 
   const playAudio = (): void => {
     const letter: string = letters[currentLetterIndex][0]; // Extract the uppercase letter
-    const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(letter.toLowerCase());
+    const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(
+      letter.toLowerCase()
+    );
     utterance.lang = "en-US"; // Adjust language if needed
     utterance.rate = 0.8; // Control the speed of the speech
     window.speechSynthesis.speak(utterance);
@@ -57,6 +83,7 @@ const LettersPage: React.FC = () => {
           →
         </button>
       </div>
+      <Link to="/beginnerPage">Go Back to Beginner Page</Link>
     </div>
   );
 };
