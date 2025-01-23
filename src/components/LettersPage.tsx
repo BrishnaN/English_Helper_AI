@@ -83,8 +83,8 @@ const LettersPage: React.FC = () => {
           →
         </button>
       </div>
-      <Link to="/beginnerPage">Go Back to Beginner Page</Link>
 
+      <Link to="/beginnerPage">Go Back to Beginner Page</Link>
       <div className="alphabetBoxes">
         <div className="alphabetBox">
           <h3>Capital Letters</h3>
