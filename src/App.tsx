@@ -10,6 +10,7 @@ import ForgotPassword from "./components/ForgotPassword.tsx";
 import BeginnerPage from "./components/BeginnerPage.tsx";
 import LettersPage from "./components/LettersPage.tsx";
 import NumbersPage from "./components/NumbersPage.tsx";
+import FamilyPage from "./components/FamilyPage.tsx";
 import "./App.css";
 //import "./styles.css";
 
@@ -48,6 +49,7 @@ const App: React.FC = () => {
         <Route path="/beginnerPage" element={<BeginnerPage />} />
         <Route path="/lettersPage" element={<LettersPage />} />
         <Route path="/numbersPage" element={<NumbersPage />} />
+        <Route path="/FamilyPage" element={<FamilyPage />} />
       </Routes>
 
       {/* API Key Form */}
