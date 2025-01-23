@@ -43,9 +43,9 @@ const NumbersPage: React.FC = () => {
   };
 
   const playAudio = (): void => {
-    const letter: string = Numbers[currentLetterIndex][0]; // Extract the uppercase letter
+    const number: string = Numbers[currentLetterIndex]; // Get the full number as a string
     const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(
-      letter.toLowerCase()
+      number // Pass the full number
     );
     utterance.lang = "en-US"; // Adjust language if needed
     utterance.rate = 0.8; // Control the speed of the speech
