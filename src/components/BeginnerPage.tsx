@@ -23,6 +23,9 @@ const BeginnerPage = () => {
       <a href="/FamilyPage">
         <button>Family</button>
       </a>
+      <a href="/ColorsPage">
+        <button>Colors</button>
+      </a>
     </div>
   );
 };
