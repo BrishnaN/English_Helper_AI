@@ -12,7 +12,7 @@ const BeginnerPage = () => {
   };
   return (
     <div>
-      <h1> Beginner Page!</h1>
+      <h1> Beginner ho Page!</h1>
       {/* Button to navigate to the letters page */}
       <a href="/lettersPage">
         <button>Letters!</button>
