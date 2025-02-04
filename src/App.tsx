@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
 import Home from "./components/Home.tsx";
 import Assessment from "./components/Assessment.tsx";
@@ -13,7 +13,6 @@ import NumbersPage from "./components/NumbersPage.tsx";
 import FamilyPage from "./components/FamilyPage.tsx";
 import ColorsPage from "./components/ColorsPage.tsx";
 import "./App.css";
-//import "./styles.css";
 
 const saveKeyData = "MYKEY";
 const prevKey = localStorage.getItem(saveKeyData);
@@ -35,23 +34,39 @@ const App: React.FC = () => {
     <div className="body">
       {/* Navigation */}
       <nav>
-        <Link to="/">Home</Link> | <Link to="/signup">Sign Up</Link> |{" "}
-        <Link to="/login">Login</Link>
+        <Link to="/english_helper_ai/">Home</Link> |{" "}
+        <Link to="/english_helper_ai/signup">Sign Up</Link> |{" "}
+        <Link to="/english_helper_ai/login">Login</Link>
       </nav>
 
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/assessmentPage" element={<AssessmentPage />} />
-        <Route path="/assessment" element={<Assessment />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/beginnerPage" element={<BeginnerPage />} />
-        <Route path="/lettersPage" element={<LettersPage />} />
-        <Route path="/numbersPage" element={<NumbersPage />} />
-        <Route path="/familyPage" element={<FamilyPage />} />
-        <Route path="/colorsPage" element={<ColorsPage />} />
+        <Route path="/english_helper_ai/" element={<Home />} />
+        <Route path="/english_helper_ai/signup" element={<SignUp />} />
+        <Route path="/english_helper_ai/login" element={<Login />} />
+        <Route
+          path="/english_helper_ai/assessmentPage"
+          element={<AssessmentPage />}
+        />
+        <Route path="/english_helper_ai/assessment" element={<Assessment />} />
+        <Route
+          path="/english_helper_ai/forgot-password"
+          element={<ForgotPassword />}
+        />
+        <Route
+          path="/english_helper_ai/beginnerPage"
+          element={<BeginnerPage />}
+        />
+        <Route
+          path="/english_helper_ai/lettersPage"
+          element={<LettersPage />}
+        />
+        <Route
+          path="/english_helper_ai/numbersPage"
+          element={<NumbersPage />}
+        />
+        <Route path="/english_helper_ai/familyPage" element={<FamilyPage />} />
+        <Route path="/english_helper_ai/colorsPage" element={<ColorsPage />} />
       </Routes>
 
       {/* API Key Form */}
@@ -71,3 +86,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+git;

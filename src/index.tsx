@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/english_helper_ai">
       <App />
     </BrowserRouter>
   </React.StrictMode>
