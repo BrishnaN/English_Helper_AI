@@ -15,7 +15,16 @@ const BeginnerPage = () => {
       <h1> Beginner ho Page!</h1>
       {/* Button to navigate to the letters page */}
       <a href="/lettersPage">
-        <button>Letters!</button>
+        <button>Letters</button>
+      </a>
+      <a href="/NumbersPage">
+        <button>Numbers</button>
+      </a>
+      <a href="/FamilyPage">
+        <button>Family</button>
+      </a>
+      <a href="/ColorsPage">
+        <button>Colors</button>
       </a>
     </div>
   );
