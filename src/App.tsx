@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
 import Home from "./components/Home.tsx";
 import Assessment from "./components/Assessment.tsx";
@@ -13,6 +13,7 @@ import NumbersPage from "./components/NumbersPage.tsx";
 import FamilyPage from "./components/FamilyPage.tsx";
 import ColorsPage from "./components/ColorsPage.tsx";
 import "./App.css";
+//import "./styles.css";
 
 const saveKeyData = "MYKEY";
 const prevKey = localStorage.getItem(saveKeyData);
@@ -39,19 +40,22 @@ const App: React.FC = () => {
       </nav>
 
       {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/assessmentPage" element={<AssessmentPage />} />
-        <Route path="/assessment" element={<Assessment />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/beginnerPage" element={<BeginnerPage />} />
-        <Route path="/lettersPage" element={<LettersPage />} />
-        <Route path="/numbersPage" element={<NumbersPage />} />
-        <Route path="/familyPage" element={<FamilyPage />} />
-        <Route path="/colorsPage" element={<ColorsPage />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="English_Helper_AI/" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/assessmentPage" element={<AssessmentPage />} />
+          <Route path="/assessment" element={<Assessment />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/beginnerPage" element={<BeginnerPage />} />
+          <Route path="/lettersPage" element={<LettersPage />} />
+          <Route path="/numbersPage" element={<NumbersPage />} />
+          <Route path="/familyPage" element={<FamilyPage />} />
+          <Route path="/colorsPage" element={<ColorsPage />} />
+        </Routes>
+      </Router>
 
       {/* API Key Form */}
       <div className="form-container">
