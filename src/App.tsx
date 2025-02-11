@@ -58,6 +58,7 @@ const App: React.FC = () => {
         <Route path="/familyPage" element={<FamilyPage />} />
         <Route path="/colorsPage" element={<ColorsPage />} />
         <Route path="/feelingsPage" element={<FeelingsPage />} />
+
         <Route path="/WeekMonthPage" element={<WeekMonthPage />} />
       </Routes>
 
