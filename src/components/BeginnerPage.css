@@ -5,10 +5,10 @@ body {
   padding: 0;
   background: linear-gradient(
     to bottom right,
-    #0ee7e7,
-    #9f72db
+    #ffffff,
+    #ffffff
   ); /* 3D gradient */
-  color: white;
+  color: rgb(21, 20, 20);
 }
 
 /* Lesson Page Container */
@@ -20,12 +20,14 @@ body {
 .lesson-title {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 4px 6px rgba(154, 149, 149, 0.6);
+  color: black;
 }
 
 .lesson-description {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
+  color: #000000;
 }
 
 /* Lesson Levels Container */
@@ -68,15 +70,76 @@ body {
 
 /* Beginner Card */
 .beginner {
-  background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+  background: linear-gradient(to bottom right, #79e8e8, #fafff7);
 }
 
 /* Intermediate Card */
 .intermediate {
-  background: linear-gradient(to bottom right, #feb47b, #ff7e5f);
+  background: linear-gradient(to bottom right, #79e8e8, #fafff7);
 }
 
 /* Advanced Card */
 .advanced {
-  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  background: linear-gradient(to bottom right, #79e8e8, #fafff7);
+}
+
+/* Center the content and add a clean look */
+.beginner-container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #fefeff, #ffffff);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  margin-top: 200px;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+/* Button grid to evenly space buttons */
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 600px;
+}
+
+/* Button styling */
+.lesson-button {
+  background: #131313;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+}
+
+.lesson-button:hover {
+  background: #1392a9;
+  transform: translateY(-3px);
+}
+
+/* Remove underline from links */
+.button-link {
+  text-decoration: none;
 }

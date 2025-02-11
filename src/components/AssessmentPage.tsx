@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const saveKeyData = "MYKEY";
 const prevKey = localStorage.getItem(saveKeyData);
@@ -12,14 +13,14 @@ const AssessmentPage = () => {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "300px" }}>
       <h1>Welcome to English_Helper_AI App</h1>
       <p>Click the button below to take the assessment.</p>
 
       {/* Button to navigate to the assessment page */}
-      <a href="/assessment">
+      <Link to="/assessment">
         <button>Take Assessment</button>
-      </a>
+      </Link>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./WeMoPage.css";
+import { Link } from "react-router-dom";
 
 const daysOfWeek: { english: string; persian: string }[] = [
   { english: "Sunday", persian: "یکشنبه" },
@@ -69,7 +70,7 @@ const WeekMonthPage: React.FC = () => {
       <h1 className="heading">Learn Days and Months!</h1>
       <div className="frameContainer">
         {/* Days of the Week Box */}
-        <div className="frame">
+        <div className="frame1">
           <button
             onClick={() => playAudio(currentDay.english)}
             className="audioButton"
@@ -97,7 +98,7 @@ const WeekMonthPage: React.FC = () => {
         </div>
 
         {/* Months of the Year Box */}
-        <div className="frame">
+        <div className="frame1">
           <button
             onClick={() => playAudio(currentMonth.english)}
             className="audioButton"
@@ -124,7 +125,7 @@ const WeekMonthPage: React.FC = () => {
           </button>
         </div>
       </div>
-      <a href="/beginnerPage">Go Back to Beginner Page</a>
+      <Link to="/beginnerPage">Go Back to Beginner Page</Link>
     </div>
   );
 };

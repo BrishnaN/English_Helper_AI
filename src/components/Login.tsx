@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div style={{ textAlign: "center", marginTop: "200px" }}>
       <h1>Login</h1>
       <div style={{ marginBottom: "15px" }}>
         <input
