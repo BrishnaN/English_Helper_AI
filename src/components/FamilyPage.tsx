@@ -39,7 +39,7 @@ const FamilyPage: React.FC = () => {
   return (
     <div className="container">
       <h1 className="heading">Learn Family Members</h1>
-      <div className="frame">
+      <div className="frame1">
         <button onClick={playAudio} className="audioButton">
           👂
         </button>
@@ -50,11 +50,11 @@ const FamilyPage: React.FC = () => {
           ←
         </button>
         <div className="familyContainer">
-          <span className="familyName">
+          <span className="letter1">
             {familyMembers[currentFamilyIndex].english}
           </span>
           <br />
-          <span className="familyPersian">
+          <span className="letter1">
             {familyMembers[currentFamilyIndex].persian}
           </span>
         </div>

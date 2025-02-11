@@ -134,8 +134,8 @@ const TimePage: React.FC = () => {
 
   return (
     <div className="container">
-      <h1 className="heading">Learn Time</h1>
-      <div className="frame">
+      <h1 className="heading">Learn Time!</h1>
+      <div className="frame1">
         <button onClick={playAudio} className="audioButton">
           👂
         </button>

@@ -3,33 +3,33 @@ import "./ColorsPage.css";
 import { Link } from "react-router-dom"; // Import the Link component
 
 const Numbers: string[] = [
-    "Red = سرخ",
-    "Blue = آبی",
-    "Green = سبز",
-    "Yellow = زرد",
-    "Black = سیاه",
-    "White = سفید",
-    "Pink = گلابی",
-    "Purple = بنفش",
-    "Orange = نارنجی",
-    "Brown = قهوه‌ای",
-    "Gray = خاکی",
-    "Silver = نقره‌ای",
+  "Red = سرخ",
+  "Blue = آبی",
+  "Green = سبز",
+  "Yellow = زرد",
+  "Black = سیاه",
+  "White = سفید",
+  "Pink = گلابی",
+  "Purple = بنفش",
+  "Orange = نارنجی",
+  "Brown = قهوه‌ای",
+  "Gray = خاکی",
+  "Silver = نقره‌ای",
 ];
 
 const colorMap: { [key: string]: string } = {
-    "Red": "#ff0000", // Red
-    "Blue": "#1569c7", // Blue (adjusted to true blue)
-    "Green": "#0b6623", // Green
-    "Yellow": "#fff200", // Yellow
-    "Black": "#000000", // Black
-    "White": "#ffffff", // White
-    "Pink": "#ff69b4", // Pink
-    "Purple": "#800080", // Purple
-    "Orange": "#ffa500", // Orange
-    "Brown": "#7c4700", // Brown (adjusted to a more classic brown)
-    "Gray": "#808080", // Gray
-    "Silver": "#c0c0c0", // Silver
+  Red: "#ff0000", // Red
+  Blue: "#1569c7", // Blue (adjusted to true blue)
+  Green: "#0b6623", // Green
+  Yellow: "#fff200", // Yellow
+  Black: "#000000", // Black
+  White: "#ffffff", // White
+  Pink: "#ff69b4", // Pink
+  Purple: "#800080", // Purple
+  Orange: "#ffa500", // Orange
+  Brown: "#7c4700", // Brown (adjusted to a more classic brown)
+  Gray: "#808080", // Gray
+  Silver: "#c0c0c0", // Silver
 };
 
 const NumbersPage: React.FC = () => {
@@ -49,8 +49,10 @@ const NumbersPage: React.FC = () => {
 
   const playAudio = (): void => {
     const number: string = Numbers[currentLetterIndex]; // Get the full color as a string
-    const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(number); 
-    utterance.lang = "en-US"; 
+    const utterance: SpeechSynthesisUtterance = new SpeechSynthesisUtterance(
+      number
+    );
+    utterance.lang = "en-US";
     utterance.rate = 0.8;
     window.speechSynthesis.speak(utterance);
   };
@@ -64,7 +66,7 @@ const NumbersPage: React.FC = () => {
     <div className="container">
       <h1 className="heading">Learn Colors!</h1>
       <div
-        className="frame"
+        className="frame2"
         style={{ backgroundColor: frameColor }} // Dynamically change the background color
       >
         <button onClick={playAudio} className="audioButton">
