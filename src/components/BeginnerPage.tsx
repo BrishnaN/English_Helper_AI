@@ -29,6 +29,9 @@ const BeginnerPage = () => {
       <a href="/feelingsPage">
         <button>Feelings</button>
       </a>
+      <a href="/GreetAndBasicPhrases">
+        <button>GreetAndBasicPhrases</button>
+      </a>
     </div>
   );
 };

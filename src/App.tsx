@@ -12,10 +12,8 @@ import LettersPage from "./components/LettersPage.tsx";
 import NumbersPage from "./components/NumbersPage.tsx";
 import FamilyPage from "./components/FamilyPage.tsx";
 import ColorsPage from "./components/ColorsPage.tsx";
-import FeelingsPage from "./components/FeelingsPage.tsx";
-
+import GreetAndBasicPhrases from "./components/GreetAndBasicPhrases.tsx";
 import "./App.css";
-
 //import "./styles.css";
 
 const saveKeyData = "MYKEY";
@@ -43,7 +41,6 @@ const App: React.FC = () => {
       </nav>
 
       {/* Routes */}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
@@ -56,7 +53,8 @@ const App: React.FC = () => {
         <Route path="/numbersPage" element={<NumbersPage />} />
         <Route path="/familyPage" element={<FamilyPage />} />
         <Route path="/colorsPage" element={<ColorsPage />} />
-        <Route path="/feelingsPage" element={<FeelingsPage />} />
+        <Route path="/GreetAndBasicPhrases" element={<GreetAndBasicPhrases />} />
+        
       </Routes>
 
       {/* API Key Form */}
