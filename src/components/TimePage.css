@@ -1,0 +1,64 @@
+.quizButton {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quizButton.selected {
+  font-weight: bold;
+}
+
+.quizButton:hover {
+  opacity: 0.8;
+}
+
+.quizButton:focus {
+  outline: none;
+}
+
+/* Color feedback */
+.quizButton.selected {
+  border: 2px solid #333;
+}
+
+.quizButton.green {
+  background-color: green;
+}
+
+.quizButton.red {
+  background-color: red;
+}
+
+.nextButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.nextButton:hover {
+  background-color: #0056b3;
+}
+
+.timeContainer {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.timeEnglish {
+  font-weight: bold;
+  color: black;
+}
+
+.timeNumber {
+  font-size: 20px;
+  color: #007bff; /* You can change this to any color you'd like */
+  font-weight: normal;
+  margin-left: 10px;
+}

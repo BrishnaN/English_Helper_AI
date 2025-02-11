@@ -50,9 +50,13 @@ const FamilyPage: React.FC = () => {
           ←
         </button>
         <div className="familyContainer">
-          <span className="familyName">{familyMembers[currentFamilyIndex].english}</span>
+          <span className="familyName">
+            {familyMembers[currentFamilyIndex].english}
+          </span>
           <br />
-          <span className="familyPersian">{familyMembers[currentFamilyIndex].persian}</span>
+          <span className="familyPersian">
+            {familyMembers[currentFamilyIndex].persian}
+          </span>
         </div>
         <button
           onClick={handleNext}

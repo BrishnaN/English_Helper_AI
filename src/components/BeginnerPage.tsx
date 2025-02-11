@@ -33,6 +33,9 @@ const BeginnerPage = () => {
       <a href="/WeekMonthPage">
         <button>Days of the week/ Months</button>
       </a>
+      <a href="/timePage">
+        <button>Time</button>
+      </a>
     </div>
   );
 };
