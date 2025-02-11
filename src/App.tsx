@@ -13,6 +13,7 @@ import NumbersPage from "./components/NumbersPage.tsx";
 import FamilyPage from "./components/FamilyPage.tsx";
 import ColorsPage from "./components/ColorsPage.tsx";
 import FeelingsPage from "./components/FeelingsPage.tsx";
+import TimePage from "./components/TimePage.tsx";
 
 import "./App.css";
 
@@ -57,6 +58,7 @@ const App: React.FC = () => {
         <Route path="/familyPage" element={<FamilyPage />} />
         <Route path="/colorsPage" element={<ColorsPage />} />
         <Route path="/feelingsPage" element={<FeelingsPage />} />
+        <Route path="/timePage" element={<TimePage />} />
       </Routes>
 
       {/* API Key Form */}
