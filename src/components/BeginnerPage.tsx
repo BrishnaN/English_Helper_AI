@@ -29,8 +29,9 @@ const BeginnerPage = () => {
       <a href="/feelingsPage">
         <button>Feelings</button>
       </a>
+
       <a href="/WeekMonthPage">
-        <button>Feelings</button>
+        <button>Days of the week/ Months</button>
       </a>
     </div>
   );
