@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #79e8e8;
 }
 
 @keyframes App-logo-spin {
@@ -42,13 +42,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #b484d2; /* Shiny dark blue */
-  color: white;
+  color: black;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -61,13 +62,18 @@ nav {
 nav a {
   text-decoration: none;
   margin-left: 15px;
-  color: white;
+  color: black;
   font-weight: bold;
+  border: 2px solid white; /* Adds a black border */
+  padding: 8px 12px; /* Adds spacing inside the box */
+  border-radius: 30px; /* Rounds the corners slightly */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
 nav a:hover {
-  color: #ddd;
-  text-decoration: underline;
+  color: white;
+  background-color: #79e8e8; /* Changes background on hover */
+  text-decoration: none;
 }
 
 /* Input field styling */
@@ -83,13 +89,13 @@ nav a:hover {
 /* Button styling */
 .Submit-Button {
   padding: 0.5rem 1rem;
-  background-color: #1e3a8a; /* Shiny dark blue */
-  color: white;
+  background-color: #79e8e8; /* Shiny dark blue */
+  color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
 .Submit-Button:hover {
-  background-color: #102a5b; /* Darker shiny blue on hover */
+  background-color: #79e8e8; /* Darker shiny blue on hover */
 }

@@ -55,7 +55,7 @@ const NumbersPage: React.FC = () => {
   return (
     <div className="container">
       <h1 className="heading">Learn English Letters</h1>
-      <div className="frame">
+      <div className="frame1">
         <button onClick={playAudio} className="audioButton">
           👂
         </button>

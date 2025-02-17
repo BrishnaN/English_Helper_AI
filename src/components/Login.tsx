@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div style={{ textAlign: "center", marginTop: "200px", color: "black"}}>
       <h1>Login</h1>
       <div style={{ marginBottom: "15px" }}>
         <input
@@ -52,7 +52,9 @@ const Login = () => {
             padding: "10px",
             width: "250px",
             marginBottom: "10px",
-            backgroundColor: "black",
+            backgroundColor: "#79e8e8",
+            border: "none",
+            borderRadius: "30px"   
           }}
         />
         <br />
@@ -61,18 +63,19 @@ const Login = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{ padding: "10px", width: "250px", backgroundColor: "black" }}
+          style={{ padding: "10px", width: "250px", backgroundColor: "#79e8e8", borderRadius: "30px", border: "none", color: "black"
+        }}
         />
       </div>
       <button
         onClick={handleLogin}
         style={{
           padding: "10px 20px",
-          backgroundColor: "#007BFF",
-          color: "white",
+          backgroundColor: "#79e8e8",
+          color: "black",
           border: "none",
           cursor: "pointer",
-          borderRadius: "5px",
+          borderRadius: "30px",
         }}
       >
         Sign In
@@ -80,14 +83,14 @@ const Login = () => {
       <p style={{ marginTop: "15px" }}>
         <Link
           to="/forgot-password"
-          style={{ color: "#007BFF", textDecoration: "none" }}
+          style={{ color: "black", textDecoration: "none" }}
         >
           Forgot Password?
         </Link>
       </p>
       <p style={{ marginTop: "15px" }}>
         Don't have an account?{" "}
-        <Link to="/signup" style={{ color: "#007BFF", textDecoration: "none" }}>
+        <Link to="/signup" style={{ color: "black", textDecoration: "none" }}>
           Sign Up
         </Link>
       </p>

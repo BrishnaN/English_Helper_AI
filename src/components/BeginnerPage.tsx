@@ -1,38 +1,30 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Container, Button } from "react-bootstrap";
+import "./BeginnerPage.css"; // Custom styles for extra beauty
 
-const saveKeyData = "MYKEY";
-const prevKey = localStorage.getItem(saveKeyData);
-const keyData = prevKey ? JSON.parse(prevKey) : "";
-
-const BeginnerPage = () => {
-  const startGame = (level: string) => {
-    console.log(`${level} Level Selected!`);
-    // Redirect or handle logic based on level
-  };
+const BeginnerPage: React.FC = () => {
   return (
-    <div>
-      <h1> Beginner Page!</h1>
-      {/* Button to navigate to the letters page */}
-      <a href="/lettersPage">
-        <button>Letters</button>
-      </a>
-      <a href="/NumbersPage">
-        <button>Numbers</button>
-      </a>
-      <a href="/FamilyPage">
-        <button>Family</button>
-      </a>
-      <a href="/ColorsPage">
-        <button>Colors</button>
-      </a>
-      <a href="/feelingsPage">
-        <button>Feelings</button>
-      </a>
-      <a href="/GreetAndBasicPhrases">
-        <button>GreetAndBasicPhrases</button>
-      </a>
-    </div>
+    <Container>
+      <h1 className="title">🌟 Beginner Lessons 🌟</h1>
+      <p className="subtitle">Choose a lesson to start learning!</p>
+      <div className="button-grid">
+        {[
+          { name: "Letters", path: "/lettersPage" },
+          { name: "Numbers", path: "/NumbersPage" },
+          { name: "Family", path: "/FamilyPage" },
+          { name: "Colors", path: "/ColorsPage" },
+          { name: "Feelings", path: "/feelingsPage" },
+          { name: "Days/Months", path: "/WeekMonthPage" },
+          { name: "Time", path: "/timePage" },
+          {name: "GreetAndBasicPhrases", path: "/GreetAndBasicPhrases"}
+        ].map((item, index) => (
+          <Link to={item.path} key={index} className="button-link">
+            <Button className="lesson-button">{item.name}</Button>
+          </Link>
+        ))}
+      </div>
+    </Container>
   );
 };
 

@@ -3,29 +3,28 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    to bottom right,
-    #0ee7e7,
-    #9f72db
-  ); /* 3D gradient */
-  color: white;
+  background: white !important; /* Ensures white background */
+  color: rgb(21, 20, 20);
 }
 
 /* Lesson Page Container */
 .lesson-page {
   text-align: center;
   padding: 2rem;
+  background: transparent; /* Prevents override */
 }
 
 .lesson-title {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 4px 6px rgba(154, 149, 149, 0.6);
+  color: black;
 }
 
 .lesson-description {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
+  color: #000000;
 }
 
 /* Lesson Levels Container */
@@ -39,7 +38,7 @@ body {
 
 /* Individual Lesson Cards */
 .lesson-card {
-  background: linear-gradient(145deg, #ffffff, #d1d9e6);
+  background: white;
   color: #333;
   border-radius: 10px;
   padding: 1.5rem;
@@ -67,16 +66,69 @@ body {
 }
 
 /* Beginner Card */
-.beginner {
-  background: linear-gradient(to bottom right, #a8e063, #56ab2f);
-}
-
-/* Intermediate Card */
-.intermediate {
-  background: linear-gradient(to bottom right, #feb47b, #ff7e5f);
-}
-
-/* Advanced Card */
+.beginner,
+.intermediate,
 .advanced {
-  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  background: #79e8e8;
+}
+
+/* Center the content and add a clean look */
+.beginner-container {
+  text-align: center;
+  padding: 40px;
+  background: transparent; /* Prevents override */
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  margin-top: 200px;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+/* Button grid to evenly space buttons */
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+}
+
+/* Button styling */
+.lesson-button {
+  background: #79e8e8;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+}
+
+.lesson-button:hover {
+  background: #79e8e8;
+  transform: translateY(-3px);
+}
+
+/* Remove underline from links */
+.button-link {
+  text-decoration: none;
 }
