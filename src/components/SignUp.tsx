@@ -34,7 +34,7 @@ const SignUp = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "200px" }}>
+    <div style={{ textAlign: "center", marginTop: "200px", color:"black"}}>
       <h1>Sign Up</h1>
       <div style={{ marginBottom: "15px" }}>
         <input
@@ -44,9 +44,11 @@ const SignUp = () => {
           onChange={(e) => setName(e.target.value)}
           style={{
             padding: "10px",
+            border:"none",
             width: "250px",
             marginBottom: "10px",
-            backgroundColor: "black",
+            backgroundColor: "#79e8e8",
+            borderRadius: "30px"
           }}
         />
         <br />
@@ -57,9 +59,11 @@ const SignUp = () => {
           onChange={(e) => setUsername(e.target.value)}
           style={{
             padding: "10px",
+            border:"none",
             width: "250px",
             marginBottom: "10px",
-            backgroundColor: "black",
+            backgroundColor: "#79e8e8",
+            borderRadius: "30px"
           }}
         />
         <br />
@@ -70,9 +74,11 @@ const SignUp = () => {
           onChange={(e) => setEmail(e.target.value)}
           style={{
             padding: "10px",
+            border:"none",
             width: "250px",
             marginBottom: "10px",
-            backgroundColor: "black",
+            backgroundColor: "#79e8e8",
+            borderRadius: "30px"
           }}
         />
         <br />
@@ -81,26 +87,26 @@ const SignUp = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{ padding: "10px", width: "250px", backgroundColor: "black" }}
+          style={{ padding: "10px", width: "250px", backgroundColor: "#79e8e8", color:"black", borderRadius: "30px", border: "none"}}
         />
       </div>
       <button
         onClick={handleSignUp}
         style={{
           padding: "10px 20px",
-          backgroundColor: "#007BFF",
-          color: "white",
+          backgroundColor: "#79e8e8",
+          color: "black",
           border: "none",
           cursor: "pointer",
-          borderRadius: "5px",
+          borderRadius: "30px",
           marginBottom: "15px",
         }}
       >
         Create Account
       </button>
-      <p style={{ marginTop: "20px" }}>
+      <p style={{ marginTop: "20px", color: "black"}}>
         Already have an account?{" "}
-        <Link to="/login" style={{ color: "#007BFF", textDecoration: "none" }}>
+        <Link to="/login" style={{ color: "black", textDecoration: "none", }}>
           Sign In
         </Link>
       </p>

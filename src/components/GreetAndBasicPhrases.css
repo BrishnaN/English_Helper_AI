@@ -1,0 +1,119 @@
+.frameContainer {
+  border: 2px solid #ffffff; /* Green border for the frame */
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f5f5f5; /* Light background color for the frame */
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Phrase text styling */
+.phraseContainer {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.phraseText, .phrasePersian {
+  display: block;
+  padding: 15px;
+  background-color: #79e8e8;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  margin: 5px; /* Ensures 5px spacing all around */
+}
+
+/* Example sections */
+.example-section {
+  margin: 5px; /* Ensures 5px spacing from other elements */
+  background-color: #79e8e8;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.example-section h4 {
+  margin: 5px 0;
+}
+
+.example-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.example-section li {
+  margin: 5px; /* Ensures spacing between list items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack text and button vertically */
+}
+
+/* Navigation buttons */
+.navButtonG {
+  background-color: #79e8e8;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px; /* Adds spacing between buttons */
+}
+
+.navButton.hidden {
+  visibility: hidden;
+}
+
+/* Audio buttons */
+.audioButtonG,
+.audioButtonInExample {
+  background: #79e8e8;
+  color: black;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 5px; /* Adds spacing between buttons */
+}
+
+/* Return link styling */
+.returnLink {
+  display: inline-block;
+  margin: 5px; /* Ensures spacing */
+  padding: 10px 15px;
+  background-color: #79e8e8;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.returnLink:hover {
+  background-color: #79e8e8;
+  color: rgb(0, 0, 0);
+}
+
+/* Example text container */
+.exampleText {
+  display: flex;
+  align-items: center;
+  margin: 5px; /* Adds spacing between elements */
+  margin-top: 2px;
+  
+}
+.exampleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.exampleText {
+  text-align: center;
+}
+

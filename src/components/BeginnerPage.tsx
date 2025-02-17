@@ -17,6 +17,7 @@ const BeginnerPage: React.FC = () => {
           { name: "Feelings", path: "/feelingsPage" },
           { name: "Days/Months", path: "/WeekMonthPage" },
           { name: "Time", path: "/timePage" },
+          {name: "GreetAndBasicPhrases", path: "/GreetAndBasicPhrases"}
         ].map((item, index) => (
           <Link to={item.path} key={index} className="button-link">
             <Button className="lesson-button">{item.name}</Button>

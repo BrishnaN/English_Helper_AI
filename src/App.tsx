@@ -12,6 +12,9 @@ import LettersPage from "./components/LettersPage.tsx";
 import NumbersPage from "./components/NumbersPage.tsx";
 import FamilyPage from "./components/FamilyPage.tsx";
 import ColorsPage from "./components/ColorsPage.tsx";
+import GreetAndBasicPhrases from "./components/GreetAndBasicPhrases.tsx";
+import "./App.css";
+//import "./styles.css";
 import FeelingsPage from "./components/FeelingsPage.tsx";
 import WeekMonthPage from "./components/WeMoPage.tsx";
 import TimePage from "./components/TimePage.tsx";
@@ -43,6 +46,8 @@ const App: React.FC = () => {
           <Link to="/login">Login</Link>
         </nav>
 
+
+
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -59,6 +64,7 @@ const App: React.FC = () => {
           <Route path="/feelingsPage" element={<FeelingsPage />} />
           <Route path="/WeekMonthPage" element={<WeekMonthPage />} />
           <Route path="/timePage" element={<TimePage />} />
+          <Route path="/GreetAndBasicPhrases" element={<GreetAndBasicPhrases />} />
         </Routes>
         {/* API Key Form */}
         <div className="form-container">
@@ -66,7 +72,7 @@ const App: React.FC = () => {
             type="password"
             placeholder="Insert API Key Here"
             onChange={changeKey}
-            style={{ width: "300px" }}
+            style={{ width: "300px", background: "#79e8e8", color: "black" }}
           />
           <Button className="Submit-Button" onClick={handleSubmit}>
             Submit

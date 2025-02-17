@@ -3,11 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    to bottom right,
-    #ffffff,
-    #ffffff
-  ); /* 3D gradient */
+  background: white !important; /* Ensures white background */
   color: rgb(21, 20, 20);
 }
 
@@ -15,6 +11,7 @@ body {
 .lesson-page {
   text-align: center;
   padding: 2rem;
+  background: transparent; /* Prevents override */
 }
 
 .lesson-title {
@@ -41,7 +38,7 @@ body {
 
 /* Individual Lesson Cards */
 .lesson-card {
-  background: linear-gradient(145deg, #ffffff, #d1d9e6);
+  background: white;
   color: #333;
   border-radius: 10px;
   padding: 1.5rem;
@@ -69,25 +66,17 @@ body {
 }
 
 /* Beginner Card */
-.beginner {
-  background: linear-gradient(to bottom right, #79e8e8, #fafff7);
-}
-
-/* Intermediate Card */
-.intermediate {
-  background: linear-gradient(to bottom right, #79e8e8, #fafff7);
-}
-
-/* Advanced Card */
+.beginner,
+.intermediate,
 .advanced {
-  background: linear-gradient(to bottom right, #79e8e8, #fafff7);
+  background: #79e8e8;
 }
 
 /* Center the content and add a clean look */
 .beginner-container {
   text-align: center;
   padding: 40px;
-  background: linear-gradient(135deg, #fefeff, #ffffff);
+  background: transparent; /* Prevents override */
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -117,25 +106,25 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 /* Button styling */
 .lesson-button {
-  background: #131313;
+  background: #79e8e8;
   border: none;
   padding: 12px 20px;
   font-size: 18px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  width: 200px;
+  width: 300px;
 }
 
 .lesson-button:hover {
-  background: #1392a9;
+  background: #79e8e8;
   transform: translateY(-3px);
 }
 
