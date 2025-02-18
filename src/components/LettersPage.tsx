@@ -63,7 +63,7 @@ const LettersPage: React.FC = () => {
       <h1 className="heading">Learn English Letters</h1>
       <div className="frame1">
         <button onClick={playAudio} className="audioButton">
-          👂
+          🗣️
         </button>
         <button
           onClick={handlePrevious}
@@ -72,7 +72,7 @@ const LettersPage: React.FC = () => {
           ←
         </button>
         <div className="letterContainer">
-          <span className="letter">{letters[currentLetterIndex]}</span>
+          <span className="letter2">{letters[currentLetterIndex]}</span>
         </div>
         <button
           onClick={handleNext}

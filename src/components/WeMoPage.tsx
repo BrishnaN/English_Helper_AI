@@ -66,16 +66,16 @@ const WeekMonthPage: React.FC = () => {
   const currentMonth = monthsOfYear[currentMonthIndex];
 
   return (
-    <div className="container">
+    <div>
       <h1 className="heading">Learn Days and Months!</h1>
-      <div className="frameContainer">
+      <div>
         {/* Days of the Week Box */}
         <div className="frame1">
           <button
             onClick={() => playAudio(currentDay.english)}
             className="audioButton"
           >
-            👂
+            🗣️
           </button>
           <button
             onClick={handlePreviousDay}
@@ -103,7 +103,7 @@ const WeekMonthPage: React.FC = () => {
             onClick={() => playAudio(currentMonth.english)}
             className="audioButton"
           >
-            👂
+            🗣️
           </button>
           <button
             onClick={handlePreviousMonth}

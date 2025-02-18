@@ -7,7 +7,7 @@ function Home() {
   };
   return (
     <div className="lesson-page">
-      <h1 className="lesson-title">Welcome to English Helper AI</h1>
+      <h1 className="lesson-title"> 📚 Welcome to English Helper AI 📚</h1>
       <p className="lesson-description">
         Learn English at your pace. Select your desired level and begin your
         journey!

@@ -137,7 +137,7 @@ const TimePage: React.FC = () => {
       <h1 className="heading">Learn Time!</h1>
       <div className="frame1">
         <button onClick={playAudio} className="audioButton">
-          👂
+          🗣️
         </button>
         <button
           onClick={handlePrevious}

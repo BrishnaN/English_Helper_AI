@@ -70,7 +70,7 @@ const NumbersPage: React.FC = () => {
         style={{ backgroundColor: frameColor }} // Dynamically change the background color
       >
         <button onClick={playAudio} className="audioButton">
-          👂
+          🗣️
         </button>
         <button
           onClick={handlePrevious}
@@ -83,7 +83,7 @@ const NumbersPage: React.FC = () => {
           ←
         </button>
         <div className="letterContainer">
-          <span className="letter">{Numbers[currentLetterIndex]}</span>
+          <span className="letter1">{Numbers[currentLetterIndex]}</span>
         </div>
         <button
           onClick={handleNext}

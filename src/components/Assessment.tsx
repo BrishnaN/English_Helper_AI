@@ -14,7 +14,7 @@ const Assessment: React.FC = () => {
         }}
       >
         <Card.Body>
-          <h1 className="mb-3">📚 Assessment Test</h1>
+          <h1 className="mb-3">📚 Assessment Test 📚</h1>
           <p className="mb-4">
             Welcome! This assessment will help us understand your current
             English proficiency level. Right now, we are focusing on the
@@ -27,7 +27,14 @@ const Assessment: React.FC = () => {
 
           {/* Button to start the beginner lesson */}
           <Link to="/beginnerPage">
-            <Button variant="primary" size="lg">
+            <Button
+              variant="primary"
+              style={{
+                background: "#79e8e8",
+                color: "black",
+                borderRadius: "30px",
+              }}
+            >
               Start Your Lesson 🚀
             </Button>
           </Link>
