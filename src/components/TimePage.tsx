@@ -90,10 +90,10 @@ const TimeQuiz: React.FC = () => {
             className={`quizButton ${
               selectedAnswer === option ? "selected" : ""
             }`}
-            style={{
-              backgroundColor:
-                selectedAnswer === option ? selectedOptionColor : "",
-            }}
+            // style={{
+            //   backgroundColor:
+            //     selectedAnswer === option ? selectedOptionColor : "",
+            // }}
           >
             {option}
           </button>
