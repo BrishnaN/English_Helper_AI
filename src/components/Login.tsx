@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "200px", color: "black"}}>
+    <div style={{ textAlign: "center", marginTop: "200px", color: "black" }}>
       <h1>Login</h1>
       <div style={{ marginBottom: "15px" }}>
         <input
@@ -54,7 +54,8 @@ const Login = () => {
             marginBottom: "10px",
             backgroundColor: "#79e8e8",
             border: "none",
-            borderRadius: "30px"   
+            borderRadius: "30px",
+            color: "black",
           }}
         />
         <br />
@@ -63,8 +64,14 @@ const Login = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{ padding: "10px", width: "250px", backgroundColor: "#79e8e8", borderRadius: "30px", border: "none", color: "black"
-        }}
+          style={{
+            padding: "10px",
+            width: "250px",
+            backgroundColor: "#79e8e8",
+            borderRadius: "30px",
+            border: "none",
+            color: "black",
+          }}
         />
       </div>
       <button
