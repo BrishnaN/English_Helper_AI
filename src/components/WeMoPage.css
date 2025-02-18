@@ -20,16 +20,11 @@
   font-size: 2rem;
   margin-bottom: 10px;
   cursor: pointer;
-  background-color: #4caf50;
   border: none;
   border-radius: 5px;
   color: white;
   padding: 10px;
   transition: background-color 0.3s ease;
-}
-
-.audioButton:hover {
-  background-color: #45a049;
 }
 
 .navButton {
@@ -59,14 +54,14 @@
 }
 
 .english {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 50px;
+
   color: #333;
   margin: 10px 0;
 }
 
 .persian {
-  font-size: 1.2rem;
+  font-size: 50px;
   color: #333;
 }
 

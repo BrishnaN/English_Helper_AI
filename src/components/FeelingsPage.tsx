@@ -59,7 +59,7 @@ const FeelingsPage: React.FC = () => {
       <h1 className="heading">Learn Feelings!</h1>
       <div className="frame1">
         <button onClick={playAudio} className="audioButton">
-          👂
+          🗣️
         </button>
         <button
           onClick={handlePrevious}

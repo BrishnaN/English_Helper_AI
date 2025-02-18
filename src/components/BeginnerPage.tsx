@@ -6,7 +6,7 @@ import "./BeginnerPage.css"; // Custom styles for extra beauty
 const BeginnerPage: React.FC = () => {
   return (
     <Container>
-      <h1 className="title">🌟 Beginner Lessons 🌟</h1>
+      <h1 className="title">📚 Beginner Lessons 📚</h1>
       <p className="subtitle">Choose a lesson to start learning!</p>
       <div className="button-grid">
         {[
@@ -17,7 +17,7 @@ const BeginnerPage: React.FC = () => {
           { name: "Feelings", path: "/feelingsPage" },
           { name: "Days/Months", path: "/WeekMonthPage" },
           { name: "Time", path: "/timePage" },
-          {name: "GreetAndBasicPhrases", path: "/GreetAndBasicPhrases"}
+          { name: "GreetAndBasicPhrases", path: "/GreetAndBasicPhrases" },
         ].map((item, index) => (
           <Link to={item.path} key={index} className="button-link">
             <Button className="lesson-button">{item.name}</Button>

@@ -41,7 +41,7 @@ const FamilyPage: React.FC = () => {
       <h1 className="heading">Learn Family Members</h1>
       <div className="frame1">
         <button onClick={playAudio} className="audioButton">
-          👂
+          🗣️
         </button>
         <button
           onClick={handlePrevious}
@@ -50,11 +50,11 @@ const FamilyPage: React.FC = () => {
           ←
         </button>
         <div className="familyContainer">
-          <span className="letter1">
+          <span className="letter">
             {familyMembers[currentFamilyIndex].english}
           </span>
           <br />
-          <span className="letter1">
+          <span className="letter">
             {familyMembers[currentFamilyIndex].persian}
           </span>
         </div>
